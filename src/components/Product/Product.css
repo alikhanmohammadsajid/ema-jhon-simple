@@ -1,0 +1,23 @@
+.product{
+    display: flex;
+    margin: 20px;
+    text-align: start;
+    font-size: 15px;
+    border: 1px solid red;
+    padding: 20px;
+}
+.product-name{
+color: orangered;
+font-weight: 400;
+}
+.image{
+    margin-right: 20px;
+}
+.main-button{
+    background-color: goldenrod;
+    width: 150px;
+    height: 30px;
+    border: 2px dotted rgb(232, 248, 10);
+    border-radius: 5px;
+    cursor: pointer;
+}
