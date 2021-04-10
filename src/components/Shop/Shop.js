@@ -13,7 +13,7 @@ const Shop = () => {
   document.title = "shop more"
 
   useEffect(() => {
-    fetch('http://localhost:5000/products?search='+search)
+    fetch('https://desolate-woodland-42661.herokuapp.com/products?search='+search)
       .then(res => res.json())
       .then(data => setProducts(data))
   }, [search])
