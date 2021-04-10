@@ -21,6 +21,7 @@ export const handleGoogleSignIn = () => {
                 photo: photoURL,
                 success: true
             };
+            setUserToken();
             return signedInUser;
             console.log(photoURL, email, displayName);
         }, [])
@@ -29,6 +30,14 @@ export const handleGoogleSignIn = () => {
             console.log(err.massage);
         });
 };
+
+const setUserToken = () => {
+    firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function (idToken) {
+        sessionStorage.setItem('token', idToken)
+    }).catch(function (error) {
+        // Handle error
+    });
+}
 
 export const handleFbSignIn = () => {
     const fbProvider = new firebase.auth.FacebookAuthProvider();
@@ -41,7 +50,7 @@ export const handleFbSignIn = () => {
             user.success = true
             return user
             var accessToken = credential.accessToken;
-            
+
         })
         .catch((error) => {
             var errorCode = error.code;
@@ -75,7 +84,7 @@ export const createUserWithEmailAndPassWord = (name, email, password) => {
             newUserInfo.success = true;
             updateUserName(name[0])
             return newUserInfo
-            
+
         })
         .catch((error) => {
             const newUserInfo = {};
@@ -91,7 +100,7 @@ export const signInWithEmailAndPassword = (email, password) => {
             newUserInfo.error = "";
             newUserInfo.success = true;
             return newUserInfo
-           
+
 
         })
         .catch((error) => {

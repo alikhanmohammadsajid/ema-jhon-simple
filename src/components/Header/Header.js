@@ -13,7 +13,7 @@ const [loggedInUser, setLoggedInUser] = useContext(UserContext)
                 <Link to="/shop">Shop</Link>
                 <Link to="/review">Order Review</Link>
                 <Link to="/inventory">Manage Inventory</Link>
-                <button onClick={() => setLoggedInUser({})}>Sign Out</button>
+                <button className="btn btn-dark" onClick={() => setLoggedInUser({})}>Sign Out</button>
                 </nav>
         </div>
     );

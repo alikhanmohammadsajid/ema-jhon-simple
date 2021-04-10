@@ -3,8 +3,9 @@
     margin: 20px;
     text-align: start;
     font-size: 15px;
-    border: 1px solid red;
+    border: 5px solid rgba(238, 255, 0, 0.932);
     padding: 20px;
+    border-radius: 30px;
 }
 .product-name{
 color: orangered;

@@ -2,9 +2,28 @@
   display: flex;
 }
 .product-container {
+  text-align: center;
   width: 60%;
   margin-left: 10px;
   margin-right: 10px;
-  border: 1px solid black;
+  border: 10px solid rgb(230, 172, 12);
+  border-radius: 50px
 }
 
+.product-search{
+  background-color:rgb(241, 238, 238);
+  border:2px solid rgb(241, 191, 191);
+  border-radius: 0px 50px 0px 50px;
+  box-shadow: 5px 5px 0px 0px rgb(206, 206, 216);
+  width: 500px;
+  height: 50px;
+  margin:10px;
+  padding: 5px;
+  text-align: center;
+  decoration:none;
+}
+.search{
+  background-color:black;
+  border-radius: 40px 40px 0px 0px;
+  box-shadow: 5px 5px 3px;
+}

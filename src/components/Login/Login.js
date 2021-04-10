@@ -97,7 +97,7 @@ function Login() {
             {user.isSignedIn ? (
                 <button onClick={signOut}>sign out</button>
             ) : (
-                <button onClick={googleSignIn}>sign in</button>
+                <button onClick={googleSignIn}>sign in with  Google</button>
             )}
             <br />
             <button onClick={fbSignIn}>Sign in with facebook</button>
@@ -110,7 +110,7 @@ function Login() {
             )}
 
 
-            <h1>Our authentication field</h1>
+            
             <br />
 
             <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />

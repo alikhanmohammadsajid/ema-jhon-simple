@@ -6,7 +6,7 @@
     text-align: center;
 }
 .header nav{
-    background-color: black;
+    background-color: rgb(236, 183, 11);
     
     line-height: 40px;
     font-size: 20px;
@@ -20,7 +20,7 @@ nav a{
     color: white;
 }
 nav a:hover{
-    background-color: gray;
-    color: black;
+    background-color: rgb(141, 117, 8);
+    color: rgb(6, 247, 227);
     
 }
